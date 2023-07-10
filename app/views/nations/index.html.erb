@@ -1,5 +1,9 @@
 <h1> Nations </h1>
 
 <% @nations.each do |nation| %>
-  <p><%= nation.name %> created_at:<%= nation.created_at %></p>
+  <h2><%= nation.name %> created_at:<%= nation.created_at %></h2>
+  <p> Monarchy: <%= nation.monarchy %></p>
+  <p> Population: <%= nation.population %></p>
 <% end %>
+
+<%= link_to "New Nation", "/nations/new" %>
