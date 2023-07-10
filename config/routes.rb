@@ -8,6 +8,8 @@ Rails.application.routes.draw do
   get "/benders/new", to: "benders#new"
   get "/benders/:id", to: "benders#show"
   get "/nations", to: "nations#index"
+  get "/nations/new", to: 'nations#new'
   get "/nations/:id", to: "nations#show"
   get "/nations/:nation_id/benders", to: "nation_benders#index"
+  post "/nations", to: 'nations#create'
 end
