@@ -1,0 +1,9 @@
+<h1> <%= @nation.name %> </h1>    
+<%= link_to "Benders", "/nations/#{@nation.id}/benders" %>
+
+<p> Name: <%= @nation.name %> </p>
+<p> Monarchy: <%= @nation.monarchy %> </p>
+<p> Population: <%= @nation.population %> </p>
+
+<p> Bender_count: <%= @nation.count_benders %> </p>
+

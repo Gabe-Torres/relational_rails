@@ -1,0 +1,2 @@
+class NationBenders < ApplicationRecord
+end

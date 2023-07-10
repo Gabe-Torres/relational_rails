@@ -1,0 +1,8 @@
+<h1><%= @nation.name %> Benders</h1>
+
+<% @benders.each do |bender| %>
+  <h3>Name: <%= bender.name %></h3>
+  <p>Age: <%= bender.age %></p>
+  <p>Avatar: <%= bender.avatar %></p>
+  <p>Bending Style: <%= bender.bending_style %></p>
+<% end %>

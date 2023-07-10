@@ -1,0 +1,10 @@
+<h1> Bender </h1>
+
+<% if @bender %>
+  <p>name: <%= @bender.name %></p>
+  <p>age: <%= @bender.age %></p>
+  <p>avatar: <%= @bender.avatar %></p>
+  <p>bending_style: <%= @bender.bending_style %></p>
+<% else %>
+  <p>Bender not found.</p>
+<% end %>
