@@ -26,7 +26,8 @@ class NationsController < ApplicationController
     nation.update(nation_params)
     redirect_to '/nations'
   end
-
+  
+    private
   def nation_params
     params.permit(:name, :population, :monarchy)
   end
