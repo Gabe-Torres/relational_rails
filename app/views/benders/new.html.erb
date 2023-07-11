@@ -1,7 +1,7 @@
 <form action="/benders" method="post">
   <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
   <p>Enter a new bender:</p>
-  <input type='text' name='bender[title]'/><br/>
+  <input type='text' name='name'/><br/>
   <textarea name='bender[description]'></textarea><br/>
   <input type='submit'/>
 </form>

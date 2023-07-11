@@ -19,6 +19,6 @@ class BendersController < ApplicationController
 
     private
   def bender_params
-    params.require(:bender).permit(:name, :age, :bending_style)
+    params.permit(:name, :age, :bending_style)
   end
 end

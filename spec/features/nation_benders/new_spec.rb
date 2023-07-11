@@ -32,7 +32,7 @@ RSpec.describe "the child creation" do
 
       click_link("Create Bender")
 
-      fill_in("Name", with: "Aang")
+      fill_in(:name, with: "Aang")
       click_button("Create Bender")
 
       expect(current_path).to eq("/nations/#{nation_1.id}/benders")
