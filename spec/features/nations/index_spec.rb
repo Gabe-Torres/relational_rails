@@ -1,13 +1,13 @@
 require "rails_helper"
 
-# [X] done
+    # [X] done
 
-# User Story 1, Parent Index 
+    # User Story 1, Parent Index
 
-# For each parent table
-# As a visitor
-# When I visit '/parents'
-# Then I see the name of each parent record in the system
+    # For each parent table
+    # As a visitor
+    # When I visit '/parents'
+    # Then I see the name of each parent record in the system
 RSpec.describe "nation index page" do 
     describe "when I visit '/nations'" do
       it " shows the name of each nation in our database" do
@@ -35,23 +35,23 @@ RSpec.describe "nation index page" do
         expect(page).to have_content("#{nation_3.name} created_at:#{nation_3.created_at}")
       end
 
-#       [X] done
+    #       [X] done
 
-# User Story 6, Parent Index sorted by Most Recently Created 
+    # User Story 6, Parent Index sorted by Most Recently Created 
 
-# As a visitor
-# When I visit the parent index,
-# I see that records are ordered by most recently created first
-# And next to each of the records I see when it was created
+    # As a visitor
+    # When I visit the parent index,
+    # I see that records are ordered by most recently created first
+    # And next to each of the records I see when it was created
     end
 
-#     [X] done
+      #     [X] done
 
-# User Story 9, Parent Index Link
+      # User Story 9, Parent Index Link
 
-# As a visitor
-# When I visit any page on the site
-# Then I see a link at the top of the page that takes me to the Parent Index
+      # As a visitor
+      # When I visit any page on the site
+      # Then I see a link at the top of the page that takes me to the Parent Index
     describe "when I visit '/'" do
       it "shows a link at the top of the page to the nations index" do
         visit "/"

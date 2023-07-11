@@ -1,0 +1,12 @@
+<%= form_with url: "/nations", method: :post, local: true do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :population %>
+  <%= f.text_field :population %>
+
+  <%= f.label :monarchy %>
+  <%= f.text_field :monarchy %>
+
+  <%= f.submit "Create Nation" %>
+<% end %>

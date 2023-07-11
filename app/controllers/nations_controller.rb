@@ -7,4 +7,28 @@ class NationsController < ApplicationController
     @nation = Nation.find(params[:id])
     # bender_count = @nation.benders.count
   end
+
+  def new
+    # @nation = Nation.new
+  end
+
+  def create
+    nation = Nation.create!(nation_params)
+    redirect_to "/nations"
+  end
+
+  def edit
+    @nation = Nation.find(params[:id])
+  end
+
+  def update
+    nation = Nation.find(params[:id])
+    nation.update(nation_params)
+    redirect_to '/nations'
+  end
+  
+    private
+  def nation_params
+    params.permit(:name, :population, :monarchy)
+  end
 end

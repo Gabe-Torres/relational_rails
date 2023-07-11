@@ -21,7 +21,7 @@ RSpec.describe "nation show page" do
       end
     end
 end
-# [ ] done
+# [X] done
 
 # User Story 7, Parent Child Count
 

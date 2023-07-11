@@ -1,0 +1,13 @@
+<%= form_with url: "/nations/#{params[:nation_id]}/benders", method: :post, local: true do |f| %>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+
+  <%= f.label :age %>
+  <%= f.text_field :age %>
+
+  <%= f.label :bending_style %>
+  <%= f.text_field :bending_style %>
+
+  <%= f.submit "Create Bender" %>
+<% end %>
+
