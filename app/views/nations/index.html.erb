@@ -1,9 +1,9 @@
 <h1> Nations </h1>
+<%= link_to "New Nation", "/nations/new" %>
 
 <% @nations.each do |nation| %>
-  <h2><%= nation.name %> created_at:<%= nation.created_at %></h2>
+  <p><%= nation.name %> created_at:<%= nation.created_at %></p>
+  <p> <%= button_to "Update #{nation.name}", "/nations/#{nation.id}/edit", method: :get%> </p>
   <p> Monarchy: <%= nation.monarchy %></p>
   <p> Population: <%= nation.population %></p>
 <% end %>
-
-<%= link_to "New Nation", "/nations/new" %>
