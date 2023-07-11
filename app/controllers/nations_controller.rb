@@ -17,6 +17,16 @@ class NationsController < ApplicationController
     redirect_to "/nations"
   end
 
+  def edit
+    @nation = Nation.find(params[:id])
+  end
+
+  def update
+    nation = Nation.find(params[:id])
+    nation.update(nation_params)
+    redirect_to '/nations'
+  end
+
   def nation_params
     params.permit(:name, :population, :monarchy)
   end
